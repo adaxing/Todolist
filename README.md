@@ -18,10 +18,10 @@ Start to add your todo list
 ![alt text](TDL_APP/public/demo/notepage.jpeg)
 
 ### Can remove and edite your list once you add
-![alt text](TDL_APP/public/demo/remove.jpeg)
+![alt text](TDL_APP/public/demo/remove.png)
 
 ### Can remove add list row
-![alt text](TDL_APP/public/demo/unhide.jpeg)
+![alt text](TDL_APP/public/demo/unhide.png)
 
 
 ## Available Scripts
