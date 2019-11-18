@@ -1,0 +1,114 @@
+body {
+    background: url(http://www.toca-ch.com/data/walls/110/24405238.jpg);
+    background-color: #e8975a;
+    background-size: cover;
+}
+.main-content {
+    margin: auto 40px;
+}
+#home {
+    margin: 50px auto;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+.nav-container {
+    background-color: #c1bcb8;
+}
+
+#list-container {
+    margin: 0 auto;
+    width: 360px;
+    background: white;
+}
+
+#title {
+    background: rgb(249, 183, 124);
+    color: white;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 24px;
+}
+
+.special-button {
+    border: 0;
+    text-transform: uppercase;
+    background: none;
+    font-size: 12px;
+    text-align: center;    
+}
+
+.special-button:focus {
+    outline: none;
+}
+
+#save {
+    display: none;
+}
+
+.fa-plus {
+    float: right;
+}
+#container {
+    width: 40%;
+}
+input {
+    font-size: 19px;
+    width: 100%;
+    /* background: #f7f7f7; */
+    border: 2px solid rgba(0,0,0,0);
+}
+
+input:focus {
+    background: white;
+    border: 1px solid pink;
+    outline: none;
+}
+
+#newlist {
+    height: 40px;
+    width: 360px;
+    display: inline-block;
+}
+
+#special-ul {
+    list-style: none ;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.special-li {
+    color: #666;
+    height: 40px;
+    line-height: 40px;
+}
+
+.special-li:nth-child(even) {
+    background: #f7f7f7;
+}
+
+.special-li span{
+    background: pink;
+    margin-right: 20px;
+    text-align: center;
+    width: 0;
+    color: white;
+    display: inline-block;
+    opacity: 0;
+    transition: 0.3s linear;
+    position: relative;
+
+}
+
+.special-li:hover span{
+    width: 40px;
+    /* transparency of element: 0, 0-1, 1*/
+    opacity:1.0;
+}
+
+.finished {
+    color: gray;
+    text-decoration: line-through;
+}
+

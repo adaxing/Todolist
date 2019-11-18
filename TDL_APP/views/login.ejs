@@ -1,0 +1,16 @@
+<% include partial/header %>
+
+<div id="container">
+    <h1>You need to <bold>Login</bold> first!!</h1>
+    <br />
+    <form action="/login" method="POST">
+        <input type="text" name="username" placeholder="username">
+        <input type="password" name="password" placeholder="password">
+        <button>Login</button>
+        <a href="/register">Register?</a>
+    </form>
+</div>
+
+
+
+<% include partial/footer %>

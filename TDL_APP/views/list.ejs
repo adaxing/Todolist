@@ -1,0 +1,45 @@
+<% include partial/header %>
+<div id="list-container">
+    <h1 id="title">TO-DO LIST<button class="special-button" id="edit">Edit</button><button class="special-button" id="save">Save</button><i class="fas fa-plus"></i></h1>
+    <input type="text" placeholder="Add New Notes">
+    <ul id="special-ul">
+        
+    </ul>
+</div>
+<script>
+    $(".special-li").on("click", function(){
+        $(this).toggleClass("finished");
+    });
+    $("ul").on("click", "span", function(){
+        $(this).closest("li").remove();
+    });
+    $("input[type='text']").on("keypress", function(event){
+        if (event.which == "13") {
+            var newList = $(this).val();
+            $(this).val("");
+            $("#special-ul").append("<li class='special-li'><span><i class='far fa-trash-alt'></i></span>" + newList + "</li>" );
+        }
+    });
+    $("#edit").on("click",function(){
+        $("#edit").hide();
+        $(".special-li").each(function(){
+            var content = $(this).text();
+            $(this).html("<span><i class='far fa-trash-alt'></i></span><input type='text' value='"+content +"'>");
+        });
+        $("#save").show();
+    });
+    $("#save").on("click", function(){
+        $("#save").hide();
+        $('input').each(function(){
+            var content = $(this).val();
+            $(this).html(content);
+            console.log($(this).contents());
+            $(this).contents().unwrap();
+        });
+        $("#edit").show();
+    })
+    $(".fa-plus").on("click", function(){
+        $("input[type='text']").fadeToggle();
+    });
+</script>
+<% include partial/footer %>
