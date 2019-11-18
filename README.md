@@ -3,25 +3,25 @@ This project uses react as frontend, express as backend and mongoose as database
 
 ### First view of app
 Set goal for today
-![alt text](public/demo/home.jpeg)
+![alt text](TDL_APP/public/demo/home.jpeg)
 
 ### Login
 Need to login first
-![alt text](public/demo/login.jpeg)
+![alt text](TDL_APP/public/demo/login.jpeg)
 
 ### Signup 
 First time need to signup
-![alt text](public/demo/signup.jpeg)
+![alt text](TDL_APP/public/demo/signup.jpeg)
 
 ### After success signin to use app
 Start to add your todo list
-![alt text](public/demo/notepage.jpeg)
+![alt text](TDL_APP/public/demo/notepage.jpeg)
 
 ### Can remove and edite your list once you add
-![alt text](public/demo/remove.jpeg)
+![alt text](TDL_APP/public/demo/remove.jpeg)
 
 ### Can remove add list row
-![alt text](public/demo/unhide.jpeg)
+![alt text](TDL_APP/public/demo/unhide.jpeg)
 
 
 ## Available Scripts
